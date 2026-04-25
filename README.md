@@ -9,14 +9,16 @@ The objective is to collaboratively complete a Solidity course and demonstrate o
 
 ## 👥 Group Members
 
-| Name             | GitHub Username | ID           |
-| ---------------- | --------------- | ------------ |
-| Sosina Seifu     | @Pomicodes      | UGR/31500/15 |
-| Gadisa Kasaye    | @Gadisaka       | UGR/25504/14 |
-| Mathias Mulugeta | @matthias22m      | UGR/25328/14 |
-| Azariel Tesfaye  | @username4      | UGR/25752/14 |
-| Firaif Lenjisa   | @username5      | UGR/25346/14 |
-| Dagmawit Andargachew | @Dagi2730   | UGR/30373/15 |
+
+| Name                 | GitHub Username | ID           | Email                         |
+| -------------------- | --------------- | ------------ | ----------------------------- |
+| Sosina Seifu         | @Pomicodes      | UGR/31500/15 | sonsinaseifuu@gmail.com       |
+| Gadisa Kasaye        | @Gadisaka       | UGR/25504/14 | gadisaka04@gmail.com          |
+| Mathias Mulugeta     | @matthias22m    | UGR/25328/14 | matthias22m@gmail.com         |
+| Azariel Tesfaye      | @azarielTesfaye | UGR/25752/14 | azarieltesfaye2021@gmail.com  |
+| Firaif Lenjisa       | @Firalen        | UGR/25346/14 | Fira81564@gmail.com           |
+| Dagmawit Andargachew | @Dagi2730       | UGR/30373/15 | —                             |
+
 
 ## 🎓 Course Information
 
@@ -67,7 +69,7 @@ Screenshots of course progress and completion can be found in the `/screenshots`
 ## 📅 Submission Details
 
 - **Submission Type:** GitHub Repository Link
-- **Deadline:** May 06, 2026 
+- **Deadline:** May 06, 2026
 
 ---
 
@@ -77,3 +79,4 @@ Screenshots of course progress and completion can be found in the `/screenshots`
 - All resources are properly organized for easy review
 
 ---
+
