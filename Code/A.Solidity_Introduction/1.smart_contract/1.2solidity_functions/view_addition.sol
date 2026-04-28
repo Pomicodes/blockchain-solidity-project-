@@ -15,3 +15,4 @@ contract Contract {
         return x + _value;
     }
 }
+// tidy: pure/view samples
