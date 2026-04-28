@@ -1,0 +1,28 @@
+pragma solidity ^0.8.20;
+
+contract StackClub {
+    address[] public members;
+
+    constructor() {
+        members.push(msg.sender);
+    }
+
+    function addMember(address newMember) external {
+        require(isMember(msg.sender));
+        members.push(newMember);
+    }
+
+    function removeLastMember() external {
+        require(isMember(msg.sender));
+        members.pop();
+    }
+
+    function isMember(address user) public view returns (bool) {
+        for (uint i = 0; i < members.length; i++) {
+            if (members[i] == user) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
