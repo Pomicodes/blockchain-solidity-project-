@@ -8,3 +8,4 @@ contract Contract {
     Foods public food3 = Foods.Sushi;
     Foods public food4 = Foods.Pasta;
 }
+// tidy: enum samples
