@@ -12,7 +12,7 @@ The objective is to collaboratively complete a Solidity course and demonstrate o
 | Name             | GitHub Username |
 | ---------------- | --------------- |
 | Sosina Seifu     | @Pomicodes      |
-| Gadisa Kasaye    | @Gadisa         |
+| Gadisa Kasaye    | @Gadisaka       |
 | Mathias Mulugeta | @username3      |
 | Azariel Tesfaye  | @username4      |
 | Firaif Lenjisa   | @username5      |
