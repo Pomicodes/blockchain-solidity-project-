@@ -13,7 +13,7 @@ The objective is to collaboratively complete a Solidity course and demonstrate o
 | ---------------- | --------------- | ------------ |
 | Sosina Seifu     | @Pomicodes      | UGR/31500/15 |
 | Gadisa Kasaye    | @Gadisaka       | UGR/25504/14 |
-| Mathias Mulugeta | @username3      | UGR/25328/14 |
+| Mathias Mulugeta | @matthias22m      | UGR/25328/14 |
 | Azariel Tesfaye  | @username4      | UGR/25752/14 |
 | Firaif Lenjisa   | @username5      | UGR/25346/14 |
 
