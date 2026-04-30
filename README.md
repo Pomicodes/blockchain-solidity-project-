@@ -17,8 +17,6 @@ The objective is to collaboratively complete a Solidity course and demonstrate o
 | Azariel Tesfaye  | @username4      | UGR/25752/14 |
 | Firaif Lenjisa   | @username5      | UGR/25346/14 |
 
----
-
 ## 🎓 Course Information
 
 We completed the following course:
