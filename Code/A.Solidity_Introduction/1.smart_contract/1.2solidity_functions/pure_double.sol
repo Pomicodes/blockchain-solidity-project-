@@ -5,3 +5,4 @@ contract Contract {
         return x * 2;
     }
 }
+// helper note: pure double
