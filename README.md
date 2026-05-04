@@ -21,8 +21,8 @@ The objective is to collaboratively complete a Solidity course and demonstrate o
 
 We completed the following course:
 
-- Platform: (Alchemy University )
-- Course Name: (Solidity )
+- Platform: (Alchemy University)
+- Course Name: (Solidity)
 - Course Link: ([Solidity](https://university.alchemy.com/course/solidity))
 
 ---
@@ -66,7 +66,7 @@ Screenshots of course progress and completion can be found in the `/screenshots`
 ## 📅 Submission Details
 
 - **Submission Type:** GitHub Repository Link
-- **Deadline:** May 06, 2026 Gc
+- **Deadline:** May 06, 2026 
 
 ---
 
