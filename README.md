@@ -66,7 +66,7 @@ Screenshots of course progress and completion can be found in the `/screenshots`
 ## 📅 Submission Details
 
 - **Submission Type:** GitHub Repository Link
-- **Deadline:** May 06, 2026
+- **Deadline:** May 06, 2026 Gc
 
 ---
 
