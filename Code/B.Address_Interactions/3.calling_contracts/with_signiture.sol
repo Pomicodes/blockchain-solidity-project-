@@ -1,0 +1,13 @@
+pragma solidity ^0.8.20;
+
+contract Sidekick {
+    function sendAlert(address hero, uint enemies, bool armed) external {
+        bytes memory payload = abi.encodeWithSignature(
+            "alert(uint256,bool)",
+            enemies,
+            armed
+        );
+
+        hero.call(payload);
+    }
+}

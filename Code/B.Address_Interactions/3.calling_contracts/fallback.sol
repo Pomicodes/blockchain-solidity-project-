@@ -1,0 +1,7 @@
+pragma solidity ^0.8.20;
+
+contract Sidekick {
+    function makeContact(address hero) external {
+        hero.call(abi.encodeWithSignature("nonExistentFunction()"));
+    }
+}
