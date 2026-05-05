@@ -1,0 +1,95 @@
+# Enum Type (enum) – Solidity Basics
+
+## What is an Enum?
+*   An `enum` (short for enumeration) is a **user-defined type** that restricts a variable to one of several predefined constant values[cite: 1].
+*   It significantly improves code **readability and maintainability** compared to using "magic numbers" (raw integers)[cite: 1].
+
+---
+
+## Why Use Enums?
+
+### The Problem: Magic Numbers
+Without enums, you are forced to use integers to represent states, which creates several issues[cite: 1]:
+*   **Cognitive Load:** It is hard to remember what arbitrary numbers like `0` or `1` represent[cite: 1].
+*   **Fragility:** If the numbering logic changes elsewhere, the code breaks[cite: 1].
+*   **Reliance on Comments:** Comments are helpful but aren't enforced by the compiler[cite: 1].
+
+```solidity
+// Hard to read and maintain
+if (player.movement == 0) {
+    // moving up
+} else if (player.movement == 1) {
+    // moving left
+}
+```
+
+### The Solution: Explicit Values
+Enums provide a structured way to define these states[cite: 1]:
+
+```solidity
+enum Directions { Up, Left, Down, Right }
+
+if (player.movement == Directions.Up) {
+    // moving up
+} else if (player.movement == Directions.Left) {
+    // moving left
+}
+```
+
+**Key Benefits:**
+*   **Self-Documenting:** The code explains itself without extra comments[cite: 1].
+*   **Shared Structure:** The enum definition can be shared across multiple contracts to ensure consistency[cite: 1].
+*   **Type Safety:** The compiler ensures that only valid values defined in the enum can be assigned[cite: 1].
+
+---
+
+## Enum Internals
+*   **Integer Mapping:** Internally, each enum value is assigned an integer index starting from **0**[cite: 1].
+    *   `Directions.Up` → `0`[cite: 1]
+    *   `Directions.Left` → `1`[cite: 1]
+    *   `Directions.Down` → `2`[cite: 1]
+*   **Casting:** You can convert between an enum and an integer using `uint()` or explicit casting[cite: 1].
+
+```solidity
+Directions public dir = Directions.Down;
+uint index = uint(dir); // index = 2
+```
+
+---
+
+## Implementation Example
+
+### State Management
+Enums are frequently used to manage the status of a contract or process[cite: 1]:
+```solidity
+enum Status { Pending, Active, Closed }
+Status public current = Status.Pending;
+```
+
+### Practice Task: Foods
+In this example, we define an enum for foods and assign them to public variables[cite: 1]:
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract FoodContract {
+    enum Foods { Apple, Pizza, Bagel, Banana }
+
+    // Storing each value in a public variable
+    Foods public food1 = Foods.Apple;
+    Foods public food2 = Foods.Pizza;
+    Foods public food3 = Foods.Bagel;
+    Foods public food4 = Foods.Banana;
+}
+```
+
+---
+
+## Key Takeaways
+*   **Readability:** Enums make logic much clearer for human readers[cite: 1].
+*   **Zero-Indexed:** Values always map to integers starting at 0[cite: 1].
+*   **Versatility:** Enums can be used as state variables, function parameters, or return types[cite: 1].
+*   **State Machines:** They are the standard way to represent lifecycle stages (e.g., `Pending`, `Approved`, `Rejected`)[cite: 1].
+
+> **Source:** Based on Alchemy University – Learn Solidity course (Basic Data Types: Enum)[cite: 1].
