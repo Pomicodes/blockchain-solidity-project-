@@ -1,0 +1,55 @@
+# Transferring Funds in Solidity
+
+## The `payable` Modifier
+In Solidity, any regular function can be made **`payable`**[cite: 1]. This modifier allows the function to receive Ether when it is called[cite: 1]. 
+
+*   **Differentiating Intent:** By using `payable` on specific functions, you can differentiate the purpose of Ether coming into a smart contract (e.g., paying a specific user vs. depositing into a pool)[cite: 1].
+*   **Ether Flow:** When a `payable` function is invoked, the Ether sent with the transaction (`msg.value`) is first deposited into the contract's balance before being handled by the function logic[cite: 1].
+
+---
+
+## Example: Paying Specific Addresses
+In the following example, a contract stores two addresses and provides distinct functions to pay each one specifically[cite: 1].
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract Contract {
+    address public a;
+    address public b;
+    
+    // Initialize the contract with two target addresses
+    constructor(address _a, address _b) {
+        a = _a;
+        b = _b;
+    }
+
+    // Function to pay address 'a'
+    function payA() public payable {
+        // Transfers the sent Ether (msg.value) to address 'a'
+        (bool success, ) = a.call{ value: msg.value }("");
+        require(success, "Transfer to A failed");
+    }
+
+    // Function to pay address 'b'
+    function payB() public payable {
+        // Transfers the sent Ether (msg.value) to address 'b'
+        (bool success, ) = b.call{ value: msg.value }("");
+        require(success, "Transfer to B failed");
+    }
+}
+```
+
+### Breakdown of the Transfer Logic
+1.  **`msg.value`**: This represents the amount of Wei sent with the function call[cite: 1].
+2.  **`target.call{ value: amount }("")`**: This is the recommended low-level method to transfer Ether to an address[cite: 1]. 
+    *   It returns a **tuple** containing a boolean (`bool success`) and a data byte array[cite: 1].
+3.  **`require(success)`**: This ensures that if the transfer fails (e.g., the recipient is a contract that rejects Ether), the entire transaction is reverted to prevent loss of funds[cite: 1].
+
+---
+
+## Key Takeaways
+*   **Wei Units:** Transfers take a `uint` amount of **Wei** (the smallest unit of Ether)[cite: 1].
+*   **Contract as Intermediary:** In this pattern, the Ether moves from the caller, into the contract, and is immediately forwarded to the specified address (`a` or `b`)[cite: 1].
+*   **Flexibility:** This allows for more complex logic than a simple `receive()` function, as you can define multiple entry points for funds[cite: 1].
