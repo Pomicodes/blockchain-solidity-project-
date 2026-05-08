@@ -17,7 +17,7 @@ The objective is to collaboratively complete a Solidity course and demonstrate o
 | Mathias Mulugeta     | @matthias22m    | UGR/25328/14 | matthias22m@gmail.com         |
 | Azariel Tesfaye      | @azarielTesfaye | UGR/25752/14 | azarieltesfaye2021@gmail.com  |
 | Firaif Lenjisa       | @Firalen        | UGR/25346/14 | Fira81564@gmail.com           |
-| Dagmawit Andargachew | @Dagi2730       | UGR/30373/15 | —                             |
+| Dagmawit Andargachew | @Dagi2730       | UGR/30373/15 | Dagmawitandargachew@gmail.com                            |
 
 
 ## 🎓 Course Information
